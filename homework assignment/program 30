@@ -1,0 +1,10 @@
+class Solution:
+    def isPalinArray(self, arr):
+        for num in arr:
+            if not self.isPalindrome(num):
+                return False
+        return True
+        
+    def isPalindrome(self, n):
+        s = str(n)
+        return s == s[::-1]
